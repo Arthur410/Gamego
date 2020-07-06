@@ -1,0 +1,1413 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  max-height: 100%;
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  background: #07060c;
+  overflow-x: hidden;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+/********************************/
+/************HEADER**************/
+/********************************/
+.header {
+  position: relative;
+  min-height: 600px;
+  /*header-top*/
+  /*header-intro*/
+}
+.header .container {
+  position: relative;
+}
+.header .header-top {
+  padding-top: 40px;
+}
+.header .header-top h1 {
+  text-align: left;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
+}
+.header .header-top .nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.header .header-top .nav .market {
+  position: relative;
+  cursor: pointer;
+}
+.header .header-top .nav .market:hover .purchase {
+  display: flex;
+}
+.header .header-top .nav .market:hover svg {
+  fill: #07060c;
+}
+.header .header-top .nav svg {
+  cursor: pointer;
+  fill: #fff;
+  margin: 0 10px;
+  position: relative;
+  transition: fill 0.2s linear;
+}
+.header .header-top .nav svg:hover {
+  fill: #07060c;
+}
+.header .header-top .nav .number {
+  width: 15px;
+  height: 15px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 9px;
+  font-weight: 700;
+  top: -6px;
+  right: 4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.header .header-top .nav .purchase {
+  cursor: default;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  min-width: 350px;
+  z-index: 1001111;
+  background: #07060c;
+}
+.header .header-top .nav .purchase p {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 0;
+  font-weight: 700;
+}
+.header .header-top .nav .purchase a {
+  color: #fff;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0 20px;
+  margin-bottom: 10px;
+  min-height: 40px;
+  border-top: 1px solid #222533;
+  border-bottom: 1px solid #222533;
+  align-items: center;
+  display: flex;
+  transition: background 0.2s linear;
+}
+.header .header-top .nav .purchase a:hover {
+  background: #3c656a;
+  font-style: italic;
+}
+.header .header-top .nav .purchase a:first-child {
+  margin-top: 20px;
+}
+.header .header-top .nav .purchase .payment {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-top .nav .purchase .payment p {
+  padding: 0;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 300;
+  margin: 5px 20px;
+}
+.header .header-top .nav .purchase .payment button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  background: transparent;
+  border: 1px solid #222533;
+  padding: 5px;
+  font-style: normal;
+  margin-right: 15px;
+  transition: background 0.2s linear, color 0.2s linear;
+}
+.header .header-top .nav .purchase .payment button:hover {
+  color: #fff;
+  background: #3c656a;
+  font-style: italic;
+}
+.header .header-intro {
+  min-height: 540px;
+}
+.header .header-intro .row {
+  justify-content: flex-end;
+}
+.header .header-intro .content {
+  text-align: right;
+  margin-top: 125px;
+  margin-right: 100px;
+}
+.header .header-intro .content button.cyber {
+  transition: background 0.2s linear;
+  margin-top: 200px;
+}
+.header .header-intro .content button.cyber:hover {
+  background: #fcea05;
+}
+.header .header-intro .content button.cyber:hover .text {
+  color: #58bfd8;
+}
+.header .header-intro .content button.cyber:hover .arrow svg {
+  fill: #58bfd8;
+}
+.header .header-intro .content button.resident {
+  transition: background 0.2s linear;
+}
+.header .header-intro .content button.resident:hover {
+  background: #e70113;
+}
+.header .header-intro .content button.resident:hover .text {
+  color: #fff;
+}
+.header .header-intro .content button.resident:hover .arrow svg {
+  fill: #fff;
+}
+.header .header-intro .content button.poe {
+  transition: background 0.2s linear;
+}
+.header .header-intro .content button.poe:hover {
+  background: #feae3f;
+}
+.header .header-intro .content button.poe:hover .text {
+  color: #fff;
+}
+.header .header-intro .content button.poe:hover .arrow svg {
+  fill: #fff;
+}
+.header .header-intro .content button.dota {
+  transition: background 0.2s linear;
+}
+.header .header-intro .content button.dota:hover {
+  background: #db525a;
+}
+.header .header-intro .content button.dota:hover .text {
+  color: #fff;
+}
+.header .header-intro .content button.dota:hover .arrow svg {
+  fill: #fff;
+}
+.header .header-intro .content button {
+  margin: 0 auto;
+  margin-top: 20px;
+  background: none;
+  border: none;
+  display: flex;
+  min-height: 40px;
+  border: 1px solid #fff;
+  transition: background 0.1s linear, border 0.2s linear;
+}
+.header .header-intro .content button:hover {
+  background: #3c656a;
+  border: 1px solid #fff;
+}
+.header .header-intro .content button:hover .text {
+  font-style: italic;
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+.header .header-intro .content button:hover .arrow svg {
+  fill: #fff;
+  transform: skew(-10deg);
+}
+.header .header-intro .content button .text {
+  font-style: normal;
+  color: #fff;
+  padding: 10px;
+  min-height: 40px;
+  font-weight: 700;
+  border-right: 1px solid #fff;
+  transition: color 0.1s linear, border-right 0.1s linear;
+}
+.header .header-intro .content button .arrow {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+}
+.header .header-intro .content button .arrow svg {
+  fill: #fff;
+  transition: fill 0.1s linear;
+}
+
+/* header*/
+.page-end .underline {
+  position: relative;
+  left: 50%;
+  margin-left: -572.5px;
+}
+
+/*header-slider*/
+.main-slider .row {
+  min-width: 0;
+}
+
+.main-slider {
+  height: 603px;
+  overflow: hidden;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/*main-slider*/
+.main-slider {
+  position: relative;
+}
+
+.header-intro .next-arrow, .header-intro .prev-arrow {
+  height: 85px;
+  position: absolute;
+  width: 13px;
+  background: transparent;
+  font-size: 0;
+}
+
+/* Стрелка влево */
+.header-intro .next-arrow {
+  background: url(../img/up.png) center/cover no-repeat;
+  z-index: 10011;
+  left: 0;
+  top: 70%;
+  opacity: 0.7;
+  margin-top: -37.5px;
+}
+
+/* Стрелка вправо */
+.header-intro .prev-arrow {
+  background: url(../img/down.png) center/cover no-repeat;
+  z-index: 11111;
+  right: 0;
+  margin-top: -37.5px;
+  top: 70%;
+  opacity: 0.7;
+}
+
+/* Стрелка не активная */
+/* Точки (булиты) */
+.main-slider .slick-dots {
+  position: absolute;
+  left: 50%;
+  margin-left: -46px;
+  z-index: 10000;
+  bottom: 40px;
+  display: flex;
+}
+
+.main-slider .slick-dots li {
+  margin: 0 5px;
+  width: 8px;
+  height: 8px;
+  background: #7e7e7e;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Активная точка */
+.main-slider .slick-dots li.slick-active {
+  background: transparent;
+  border: 2px solid #fff;
+  width: 10px;
+  height: 10px;
+}
+
+/* Элемент точки */
+.main-slider .slick-dots li button {
+  font-size: 0;
+}
+
+.games {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  /*platform*/
+  /*main-content*/
+}
+.games .container {
+  position: relative;
+}
+.games .platform {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+}
+.games .platform h1 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #d9d9d9;
+}
+.games .platform .platform-nav {
+  margin-left: 30px;
+}
+.games .platform .platform-nav ul {
+  display: flex;
+}
+.games .platform .platform-nav ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.games .platform .platform-nav ul li:hover a {
+  color: #d9d9d9;
+}
+.games .platform .platform-nav ul li:hover svg {
+  fill: #d9d9d9;
+}
+.games .platform .platform-nav ul li a {
+  margin-left: 5px;
+  font-weight: 400;
+  color: #525353;
+  transition: color 0.2s linear;
+}
+.games .platform .platform-nav ul li svg {
+  cursor: pointer;
+  fill: #525353;
+  transition: fill 0.2s linear;
+}
+.games .main-content {
+  height: 420px;
+  overflow: hidden;
+  /*game*/
+}
+.games .main-content .game-list {
+  width: 100%;
+  margin: 0 auto;
+}
+.games .main-content .game {
+  padding: 0 5px;
+  min-height: 360px;
+  transition: transform 0.2s linear;
+}
+.games .main-content .game img {
+  height: 100%;
+  border-radius: 7px;
+  width: 100%;
+}
+.games .main-content .game h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.games .main-content .game p {
+  color: #7c7c7c;
+  margin-bottom: 5px;
+}
+.games .main-content .game .preview {
+  min-height: 150px;
+  position: absolute;
+  bottom: 0;
+  min-width: 200px;
+  left: 15px;
+  margin-bottom: 10px;
+}
+.games .main-content .game .preview .rate {
+  top: 0;
+  right: 0;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border: 2px solid #7c7c7c;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.games .main-content .game .price-platform {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.games .main-content .game .price-platform h1 {
+  color: #fff;
+  font-size: 14px;
+}
+.games .main-content .game .price-platform svg {
+  fill: #7c7c7c;
+}
+.games .main-content .game .price-platform .platforms svg {
+  margin: 0 7px;
+}
+.games .main-content .game:hover {
+  transform: scale(1.05);
+}
+.games .main-content .game:hover .hover-content {
+  background: linear-gradient(rgba(17, 21, 24, 0.7), transparent);
+}
+.games .main-content .game:hover .hover-content button {
+  border: 2px solid #919a9c;
+  font-size: 18px;
+}
+.games .main-content .game .hover-content {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 100;
+  transition: background 0.2s linear;
+}
+.games .main-content .game .hover-content button {
+  background: transparent;
+  border: 0;
+  color: #919a9c;
+  padding: 5px;
+  font-size: 0;
+  font-weight: 700;
+  transition: transform 0.2s linear, color 0.2s linear, border 0.1s linear, font-size 0.2s linear;
+}
+.games .main-content .game .hover-content button:hover {
+  transform: scale(1.1);
+  color: #fff;
+  border: 2px solid #fff;
+}
+.games .slick-arrow {
+  font-size: 0;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #1c1e22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 0.2s linear;
+}
+.games .slick-arrow:hover {
+  border: 1px solid #fff;
+}
+.games .slick-arrow:hover img {
+  filter: brightness(100);
+}
+.games .prev1 {
+  right: 0;
+}
+.games .next1 {
+  right: 55px;
+}
+
+/*section games*/
+.gallery {
+  margin-bottom: 90px;
+}
+.gallery .top-gallery h1 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+.gallery .top-gallery .container {
+  position: relative;
+}
+.gallery .main {
+  position: relative;
+  margin-top: 80px;
+  text-align: center;
+}
+.gallery .main .container-fluid.slide {
+  height: 400px;
+  overflow: hidden;
+}
+.gallery .main img {
+  border-radius: 4px;
+  position: relative;
+}
+.gallery .main .slide {
+  position: relative;
+}
+.gallery .main .main-pic {
+  position: relative;
+  max-width: 710px;
+  max-height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.gallery .main .main-pic img {
+  width: 100%;
+  height: 100%;
+}
+.gallery .text {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  left: 50%;
+  margin-left: -121.5px;
+  flex-direction: column;
+  min-height: 150px;
+  margin-bottom: 15px;
+}
+.gallery .text h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.gallery .text h2 {
+  color: #fff;
+  font-weight: 700;
+}
+.gallery .black-left {
+  position: absolute;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(to right, #07060c, #07060c, rgba(7, 6, 12, 0.9), rgba(7, 6, 12, 0.6), transparent);
+  z-index: 1000;
+}
+.gallery .black-right {
+  position: absolute;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(to left, #07060c, #07060c, rgba(7, 6, 12, 0.9), rgba(7, 6, 12, 0.6), transparent);
+  z-index: 1000;
+}
+
+/*section.gallery */
+/*gallery-slider*/
+.gallery .slick-slide {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Слайд по центру */
+.gallery .slick-slide.slick-center {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-width: 710px;
+  margin: 0 10px;
+}
+
+/* Стрелка */
+.gallery .slick-arrow {
+  font-size: 0;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #1c1e22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 0.2s linear;
+}
+.gallery .slick-arrow:hover {
+  border: 1px solid #fff;
+}
+.gallery .slick-arrow:hover img {
+  filter: brightness(100);
+}
+
+/* Стрелка влево */
+.gallery .prev {
+  right: 0;
+}
+
+/* Стрелка вправо */
+.gallery .next {
+  right: 55px;
+}
+
+/* Стрелка не активная */
+.main-pic {
+  opacity: 0.5;
+  transition: opacity 0.2s linear;
+}
+
+.main-pic.slick-current {
+  opacity: 1;
+}
+
+section.category {
+  /*game-list*/
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+section.category .row {
+  margin-bottom: 110px;
+}
+section.category .category-slider {
+  height: 640px;
+  overflow: hidden;
+}
+section.category .category-top h1 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+section.category .game-list {
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
+  padding: 0 0 260px 0;
+}
+section.category .game-list:hover img {
+  transform: scale(1.2);
+}
+section.category .game-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.4s linear;
+}
+section.category .game-list .category-item {
+  position: absolute;
+  z-index: 101;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  right: 0;
+  min-width: 100%;
+  text-align: right;
+  min-height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+section.category .game-list .category-item p {
+  cursor: pointer;
+  margin-right: 25px;
+  color: #949494;
+  font-size: 16px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  transition: color 0.2s linear;
+}
+section.category .game-list .category-item p:hover {
+  color: #fff;
+}
+section.category .game-list .category-item .arrow {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #6b6a6a;
+}
+section.category .game-list .category-item .arrow svg {
+  fill: #fff;
+}
+section.category .game-list .category-item:hover .arrow {
+  animation-name: arrow;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+@keyframes arrow {
+  0% {
+    right: 20px;
+  }
+  10% {
+    right: 21px;
+  }
+  20% {
+    right: 22px;
+  }
+  30% {
+    right: 23px;
+  }
+  40% {
+    right: 24px;
+  }
+  50% {
+    right: 23px;
+  }
+  60% {
+    right: 22px;
+  }
+  70% {
+    right: 21px;
+  }
+  80% {
+    right: 20px;
+  }
+  85% {
+    right: 19px;
+  }
+  90% {
+    right: 18px;
+  }
+  95% {
+    right: 19px;
+  }
+  100% {
+    right: 20px;
+  }
+}
+section.category .container {
+  position: relative;
+}
+section.category .underline {
+  position: relative;
+  left: 50%;
+  margin-left: -572.5px;
+}
+section.category .category-next.slick-arrow, section.category .category-prev.slick-arrow {
+  font-size: 0;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #1c1e22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 0.2s linear;
+  z-index: 1000;
+}
+section.category .category-next.slick-arrow:hover, section.category .category-prev.slick-arrow:hover {
+  border: 1px solid #fff;
+}
+section.category .category-next.slick-arrow:hover img, section.category .category-prev.slick-arrow:hover img {
+  filter: brightness(100);
+}
+section.category .category-prev {
+  right: 0;
+}
+section.category .category-next {
+  right: 55px;
+}
+section.category .category-slider {
+  padding: 0 380px;
+}
+/*section.category*/
+.footer {
+  text-align: center;
+  margin-top: 90px;
+  /*social*/
+}
+.footer .row {
+  margin-bottom: 70px;
+}
+.footer h1 {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.footer .social {
+  margin-top: 25px;
+}
+.footer .social a {
+  margin: 0 11px;
+}
+.footer .social a svg {
+  fill: #fff;
+}
+.footer .social a svg.youtube path {
+  transition: fill 0.2s linear;
+}
+.footer .social a svg.youtube path:first-child {
+  fill: #fff;
+}
+.footer .social a svg.youtube path:last-child {
+  fill: #07060c;
+}
+.footer .social a svg.youtube:hover path:first-child {
+  fill: #ff0000;
+}
+.footer .social a svg.youtube:hover path:last-child {
+  fill: #fff;
+}
+.footer .social a svg.twitter {
+  transition: fill 0.2s linear;
+}
+.footer .social a svg.twitter:hover {
+  fill: #03a9f4;
+}
+.footer .social a svg.facebook {
+  transition: fill 0.2s linear;
+}
+.footer .social a svg.facebook:hover {
+  fill: #2196f3;
+}
+.footer .social a svg.twitch {
+  transition: fill 0.2s linear;
+}
+.footer .social a svg.twitch:hover {
+  fill: #673ab7;
+}
+.footer .social a svg.odnoklassniki {
+  transition: fill 0.2s linear;
+}
+.footer .social a svg.odnoklassniki:hover {
+  fill: #ff9800;
+}
+.footer .social a svg.instagram stop {
+  transition: stop-color 0.2s linear;
+}
+.footer .social a svg.instagram:hover stop:first-child {
+  stop-color: #ffc500;
+}
+.footer .social a svg.instagram:hover stop:last-child {
+  stop-color: #da00af;
+}
+.footer .footer-nav {
+  text-align: left;
+  display: flex;
+}
+.footer .footer-nav h1 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+.footer .footer-nav ul {
+  margin-right: 40px;
+}
+.footer .footer-nav ul li {
+  margin-top: 10px;
+}
+.footer .footer-nav ul li a {
+  font-size: 14px;
+  color: #4c4a5f;
+  font-weight: 300;
+  transition: color 0.2s linear;
+}
+.footer .footer-nav ul.first h1 {
+  color: #bb1344;
+  padding-bottom: 15px;
+  position: relative;
+}
+.footer .footer-nav ul.first h1:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #bb1344;
+  bottom: 0;
+  left: 0;
+}
+.footer .footer-nav ul.first li a:hover {
+  color: #bb1344;
+}
+.footer .footer-nav ul.second h1 {
+  color: #7fcb69;
+  position: relative;
+  padding-bottom: 15px;
+}
+.footer .footer-nav ul.second h1:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #7fcb69;
+  bottom: 0;
+  left: 0;
+}
+.footer .footer-nav ul.second li a:hover {
+  color: #7fcb69;
+}
+.footer .footer-nav ul.third h1 {
+  color: #f9e876;
+  padding-bottom: 15px;
+  position: relative;
+}
+.footer .footer-nav ul.third h1:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #f9e876;
+  bottom: 0;
+  left: 0;
+}
+.footer .footer-nav ul.third li a:hover {
+  color: #f9e876;
+}
+.footer .footer-nav ul.fourth h1 {
+  color: #43cbfd;
+  padding-bottom: 15px;
+  position: relative;
+}
+.footer .footer-nav ul.fourth h1:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #43cbfd;
+  bottom: 0;
+  left: 0;
+}
+.footer .footer-nav ul.fourth li a:hover {
+  color: #43cbfd;
+}
+.footer .footer-nav ul.fifth h1 {
+  color: #633fbb;
+  padding-bottom: 15px;
+  position: relative;
+}
+.footer .footer-nav ul.fifth h1:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #633fbb;
+  bottom: 0;
+  left: 0;
+}
+.footer .footer-nav ul.fifth li a:hover {
+  color: #633fbb;
+}
+.footer .footer-copyright {
+  position: relative;
+  border-top: 1px solid #1a1c26;
+  overflow-x: hidden;
+  min-height: 100px;
+}
+.footer .footer-copyright .row {
+  margin-bottom: 0;
+}
+.footer .footer-copyright .copyright {
+  width: 100%;
+  text-align: center;
+}
+.footer .footer-copyright .copyright p {
+  padding-top: 46px;
+  font-size: 14px;
+  color: #4c4a5f;
+  font-weight: 300;
+}
+.footer .footer-copyright .arrow-up {
+  z-index: 122;
+  display: block;
+  right: 20%;
+  width: 60px;
+  bottom: 10px;
+  height: 60px;
+  border: 1px solid #222533;
+  border-radius: 50%;
+  position: absolute;
+  background: #bb1344;
+  cursor: pointer;
+  animation-name: arrow-up;
+  animation-duration: 1s;
+}
+@keyframes arrow-up {}
+.footer .footer-copyright .arrow-up span {
+  display: block;
+  width: 15px;
+  height: 10px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -7.5px;
+  margin-top: -5px;
+}
+.footer .footer-copyright .arrow-up span:after {
+  content: "";
+  width: 8px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: 4px;
+  right: 1px;
+}
+.footer .footer-copyright .arrow-up span:before {
+  content: "";
+  width: 8px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  transform: rotate(-45deg);
+  bottom: 4px;
+  left: 1px;
+}
+
+/*********************************/
+/************MEDIA****************/
+/*********************************/
+@media (max-width: 1740px) {
+  .header .header-top .nav .purchase {
+    min-width: 290px;
+  }
+}
+@media (max-width: 1600px) {
+  .header .header-top .nav .purchase {
+    position: absolute;
+    right: -20px;
+  }
+}
+@media (max-width: 1400px) {
+  .gallery .slick-slide.slick-center {
+    min-width: auto;
+  }
+
+  .gallery .text {
+    margin-bottom: 0;
+  }
+
+  section.category .category-slider {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 1170px) {
+  .footer .footer-nav ul {
+    margin-right: 30px;
+  }
+
+  .page-end .underline {
+    max-width: 100%;
+    margin: 0 auto;
+    left: 0;
+    margin-left: 0;
+  }
+
+  section.category .underline {
+    max-width: 100%;
+    margin: 0 auto;
+    left: 0;
+    margin-left: 0;
+  }
+
+  .gallery .text {
+    justify-content: flex-end;
+    bottom: 15px;
+  }
+}
+@media (max-width: 991.98px) {
+  .gallery .slick-slide.slick-center {
+    min-width: 400px;
+  }
+
+  .header .header-intro .row {
+    justify-content: center;
+  }
+
+  .header .header-intro .content {
+    margin-right: 0;
+  }
+
+  .games .main-content .game img {
+    border-radius: 7px;
+  }
+
+  .games .main-content .game .preview {
+    min-width: 100%;
+    padding-right: 50px;
+  }
+
+  .games .main-content .game .preview .rate {
+    right: 50px;
+  }
+
+  .footer h1 {
+    margin-top: 0;
+  }
+
+  .footer .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .social a {
+    margin: 5px 0;
+  }
+
+  .footer .footer-nav {
+    flex-wrap: wrap;
+  }
+
+  footer.footer .footer-nav ul.first, footer.footer .footer-nav ul.second, footer.footer .footer-nav ul.third {
+    margin-right: 65px;
+  }
+
+  .fourth, .fifth {
+    margin-top: 20px;
+  }
+
+  .footer .row {
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    margin-top: 70px;
+  }
+
+  .category .row {
+    margin-bottom: 60px;
+  }
+
+  .gallery {
+    margin-bottom: 70px;
+  }
+
+  .games {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 767.98px) {
+  .gallery .slick-slide.slick-center {
+    min-width: 315px;
+  }
+
+  section.category .game-list {
+    margin-top: 10px;
+  }
+
+  footer.footer .footer-nav ul.first, footer.footer .footer-nav ul.second, footer.footer .footer-nav ul.third {
+    margin-right: 25px;
+  }
+
+  .third {
+    margin-top: 20px;
+  }
+
+  .footer .footer-copyright .arrow-up {
+    right: 10%;
+  }
+
+  .footer .footer-nav ul li a {
+    font-size: 16px;
+  }
+
+  .footer .footer-nav ul h1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575.98px) {
+  .games .platform .platform-nav ul {
+    flex-direction: column;
+  }
+  .games .platform .platform-nav ul li {
+    margin: 5px 0;
+  }
+
+  .main-pic.slick-slide {
+    width: 100% !important;
+  }
+
+  .games .next1 {
+    right: auto;
+    left: 0;
+    top: 25px;
+  }
+
+  .games .prev1 {
+    right: auto;
+    left: 45px;
+    top: 25px;
+  }
+
+  .games .platform {
+    margin-bottom: 15px;
+  }
+
+  .games {
+    margin-top: 30px;
+  }
+
+  .games .main-content .game img {
+    border-radius: 8px;
+  }
+
+  .games .main-content .game h2 {
+    font-size: 21px;
+  }
+
+  .games .main-content .game p {
+    font-size: 17px;
+  }
+
+  .games .main-content .game .price-platform h1 {
+    font-size: 17px;
+  }
+
+  .games .main-content .game .preview {
+    margin-bottom: 30px;
+  }
+
+  .games .main-content .game .price-platform .platforms svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .games .main-content .game .preview .rate {
+    width: 60px;
+    height: 60px;
+    font-size: 17px;
+  }
+
+  .games .platform .platform-nav ul li a {
+    font-size: 16px;
+  }
+
+  .games .platform h1 {
+    font-size: 20px;
+  }
+
+  .gallery .main {
+    margin-top: 40px;
+  }
+
+  .gallery .top-gallery h1 {
+    font-size: 20px;
+  }
+
+  .gallery {
+    margin-bottom: 35px;
+  }
+
+  section.category .category-top h1 {
+    margin-bottom: 25px;
+  }
+
+  .footer .footer-nav {
+    flex-direction: column;
+    margin-left: 60px;
+  }
+
+  .footer .footer-copyright .arrow-up {
+    left: 0;
+    bottom: 50px;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 360px) {
+  .footer .footer-nav ul li a {
+    font-size: 14px;
+  }
+
+  footer.footer .footer-nav ul.first, footer.footer .footer-nav ul.second, footer.footer .footer-nav ul.third {
+    margin-top: 15px;
+  }
+
+  .games .next1 {
+    right: auto;
+    left: 0;
+    top: 45px;
+  }
+
+  .games .prev1 {
+    right: auto;
+    left: 45px;
+    top: 45px;
+  }
+
+  .header-intro .next-arrow {
+    top: 77%;
+  }
+
+  .header-intro .prev-arrow {
+    top: 77%;
+  }
+
+  .games .main-content .game .price-platform .platforms svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .games .main-content .game .preview .rate {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
