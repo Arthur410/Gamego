@@ -5,7 +5,11 @@ $(document).ready(function () {
 		fade:true,
 		dots:true,
 		nextArrow: $('.next-arrow'), 
-		prevArrow: $('.prev-arrow')
+		prevArrow: $('.prev-arrow'),
+		autoplay: true,
+ 		autoplaySpeed: 3000,
+ 		pauseOnFocus:false,
+		pauseOnHover:false
 	});
 	$('.main-content').slick({
 		nextArrow: $('.prev1'), 
@@ -18,6 +22,10 @@ $(document).ready(function () {
 		nextArrow: $('.prev'), 
 		prevArrow: $('.next'),
 		waitForAnimate:false,
+		autoplay: true,
+ 		autoplaySpeed: 3000,
+ 		pauseOnFocus:false,
+		pauseOnHover:false
 	});
 
 	$('.category-slider').slick({
